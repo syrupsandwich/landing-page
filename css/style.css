@@ -45,7 +45,10 @@ h1 {
 }
 .image-placeholder {
   flex: 1;
+  display: flex;
   background-color: gray;
+  align-items: center;
+  justify-content: center;
 }
 .intro {
   display: flex;
@@ -58,15 +61,66 @@ button {
   border-radius: 6px;
 }
 
-.info {
+/* 2nd box */
+.box-2 {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: start;
+  height: 480px;
+  text-align: center;
+
+}
+.box-2-title {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: bolder;
+  color: #1F2937;
+}
+.container {
+  display: flex;
+  flex-flow: row wrap;
   justify-content: center;
 }
+.container div {
+  width: 148px;
+  margin-right: 20px;
+}
 .image {
+  display: flex;
+  flex-direction: column;
   height: 148px;
   width: 148px;
-  border-width: 2px;
-  border-color: #3882F6;
+  background-color: yellow;
+  border-radius: 40px;
 }
 
+/* 3rd box */
+.box-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #E5E7EB;
+  height: 450px;
+}
+.quote {
+  font-size: 36px;
+  font-weight: lighter;
+  font-style: italic;
+  color: #1F2937;
+  margin: 0px;
+  text-align: center;
+}
+.credit {
+  margin: 0px;
+  text-align: end;
+}
+
+/* 4th box */
+.box-4 {
+  display: flex;
+  flex-direction: column;
+}
+.prompt {
+  display: flex;
+  background-color: #3882F6;
+}
