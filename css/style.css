@@ -1,8 +1,16 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
 .box-1,
 .box-2,
 .box-3,
 .box-4 {
-  padding: 0px 120px;
+  padding: 0px 20%;
+  flex: 1 0 auto;
+}
+* {
+  margin: 2px;
 }
 .box-1,
 footer {
@@ -11,7 +19,7 @@ footer {
   flex-direction: column;
 }
 .box-1 {
-  height: 280px;
+  height: 450px;
 }
 h1 {
   font-size: 48px;
@@ -25,6 +33,7 @@ h1 {
   color: #E5E7EB;
 }
 .words {
+  flex: 1;
   margin-right: 24px;
 }
 .logo {
@@ -53,12 +62,13 @@ h1 {
 .intro {
   display: flex;
   flex-direction: row;
-  align-content: center;
+  margin: auto 0px;
 }
 button {
   background-color: #3882F6;
   padding: 8px 12px;
   border-radius: 6px;
+  color: #F9FAF8;
 }
 
 /* 2nd box */
@@ -92,6 +102,10 @@ button {
   width: 148px;
   background-color: yellow;
   border-radius: 40px;
+  border-color: #3882F6;
+  border-width: thick;
+  border-style: double;
+  margin: 8px 0px;
 }
 
 /* 3rd box */
@@ -117,10 +131,26 @@ button {
 
 /* 4th box */
 .box-4 {
+  height: 200px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .prompt {
   display: flex;
   background-color: #3882F6;
+  border-radius: 2px;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 120px;
+  color: #F9FAF8;
+}
+.trigger {
+  text-align: center;
+  margin: 12px 18px;
+}
+.exit button{
+  border-color: #5f97f3;
+  border-width: medium;
+  margin: 12px 18px;
 }
